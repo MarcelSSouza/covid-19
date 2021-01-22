@@ -1,7 +1,7 @@
 # COVID-19 WORLD DATA
 > A simple application that shows data from a public COVID-19 API. Now you can see numbers of: death, revovered and new cases of coronavirus.
 
-![Images of the app](./corona_virus/main1.png)
+![Images of the app](./assets/main1.png)
 
 ## Installation
  Just download the main folder and start the file index.html using your best browser.
