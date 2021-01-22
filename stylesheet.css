@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.imagem {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+#flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container {
+  margin-top: 5%;
+}
+.div {
+  font-size: 300%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+.tittle{
+  margin-top: 2%;
+}
+.obitos_totais{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.casos_totais{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.recovered_totais{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
