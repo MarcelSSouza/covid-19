@@ -10,7 +10,7 @@ $.ajax({
 	method: "GET",
 	dataType: "json",
 	success: function (data) {
-		var respostaout =data.Global.TotalConfirmed.toLocaleString('pt-BR');
+		var respostaout = data.Global.TotalConfirmed.toLocaleString('pt-BR');
 		var respostadeath =  data.Global.TotalDeaths.toLocaleString('pt-BR');
 		var respostarecovered = data.Global.TotalRecovered.toLocaleString('pt-BR');
 		output.innerHTML = respostaout;
@@ -49,7 +49,6 @@ function pesquisa_pais(){
 		});
 	}
 	var pesquisa = $("#pesquisa_input").val('')
-
 }
 function voltar(){
 	$("#tudo_2").addClass('d-none')	
