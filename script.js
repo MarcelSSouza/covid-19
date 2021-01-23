@@ -8,7 +8,9 @@ var output7 = document.getElementById("name_pais");
 $.ajax({
 	url: "https://api.covid19api.com/summary",
 	method: "GET",
-	dataType: "json",
+	dataType: "jsonp",
+	crossDomain: true,
+	
 	success: function (data) {
 		var respostaout = data.Global.TotalConfirmed.toLocaleString('pt-BR');
 		var respostadeath =  data.Global.TotalDeaths.toLocaleString('pt-BR');
