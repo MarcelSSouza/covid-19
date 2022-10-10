@@ -5,11 +5,15 @@ var output4 = document.getElementById("casos_pais");
 var output5 = document.getElementById("obitos_pais");
 var output6 = document.getElementById("recovered_pais");
 var output7 = document.getElementById("name_pais");
+
+//I just want to call the api after the page is loaded
+$(document).ready(function(){
 $.ajax({
 	url: "https://api.covid19api.com/summary",
 	method: "GET",
 	dataType: "jsonp",
 	crossDomain: true,
+	mode: 'no-cors',
 	
 	success: function (data) {
 		var respostaout = data.Global.TotalConfirmed.toLocaleString('pt-BR');
@@ -19,7 +23,11 @@ $.ajax({
 		output2.innerHTML = respostadeath;
 		output3.innerHTML = respostarecovered;
 	}
-});
+});});
+
+
+
+
 function mostrar(){
 	$("#tudo").addClass('d-none')
 }
