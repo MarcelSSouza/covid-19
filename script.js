@@ -7,24 +7,6 @@ var output6 = document.getElementById("recovered_pais");
 var output7 = document.getElementById("name_pais");
 
 //I just want to call the api after the page is loaded
-$(document).ready(function(){
-$.ajax({
-	url: "https://api.covid19api.com/summary",
-	method: "GET",
-	dataType: "jsonp",
-	crossDomain: true,
-	mode: 'no-cors',
-	
-	success: function (data) {
-		var respostaout = data.Global.TotalConfirmed.toLocaleString('pt-BR');
-		var respostadeath =  data.Global.TotalDeaths.toLocaleString('pt-BR');
-		var respostarecovered = data.Global.TotalRecovered.toLocaleString('pt-BR');
-		output.innerHTML = respostaout;
-		output2.innerHTML = respostadeath;
-		output3.innerHTML = respostarecovered;
-	}
-});});
-
 
 
 
@@ -47,13 +29,11 @@ function pesquisa_pais(){
 				$("#tudo_2").removeClass('d-none')
 				var respostaout =data[tam-1].Confirmed.toLocaleString('pt-BR');
 				var respostadeath =  data[tam-1].Deaths.toLocaleString('pt-BR');
-				var respostarecovered = data[tam-1].Recovered.toLocaleString('pt-BR');
 				var name_pais = data[tam-1].Country
 				console.log(respostaout)
 				console.log(respostadeath)
 				output4.innerHTML = respostaout;
 				output5.innerHTML = respostadeath;
-				output6.innerHTML = respostarecovered;
 				output7.innerHTML = name_pais + " COVID Data"
 			}
 		});
